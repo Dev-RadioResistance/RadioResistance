@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio résistant </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <script src ="InterfaceRadioResistance.js"></script>
+    <!-- header  -->
+    <header>
+        <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <button class="butt" onclick = "toggleRadio(true)"><div class="logo" >
+            <p><span>radio</span>résistant</p>
+        </div></button>
+        <ul class="menu">
+            <li><button class="butt" onclick="toggleRadio(false)"><a href="#home">Acceuil</a></button></li>
+            <li><button class="butt" onclick="toggleRadio(false)"><a href="#timeline">Nos narrateurs en quelques dates</a></button></li>
+            <li><button class="butt" onclick="toggleRadio(false)"><a href="#cars">A propos de nous</a></button></li>
+        </ul>
+    </header>
+    
+    <!-- page déroulante -->
+    
+    <div id ="page">
+    
+    <!-- section Acceuil -->
+     
+    <section id="home">
+        <div class="left">
+            <h1>notre <span>projet</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque earum, totam laudantium dolor voluptatum fugiat. Odio doloribus nostrum harum corporis. Natus omnis deleniti reiciendis illum maxime necessitatibus accusantium esse.</p>
+        </div>
+        <div class="right">
+            <img src="images/download.png">
+        </div>
+    </section>
+
+    <section id ="timeline">
+    <h2 class="section_title">frise chronologique</h2>
+    <div class="timeline">
+      
+      <ol>
+        <li>
+          <p class="diplome">1940</p>
+          <span class="point"></span>
+          <p class="description">
+            bla bla
+          </p>
+        </li>
+        <li>
+          <p class="diplome">1941</p>
+          <span class="point"></span>
+          <p class="description">En lien avec la biologie et/ou la zoologie</p>
+        </li>
+        <li>
+          <p class="diplome">1942</p>
+          <span class="point"></span>
+          <p class="description">En lien avec la biologie et/ou la zoologie</p>
+        </li>
+        <li>
+          <p class="diplome">1943</p>
+            <span class="point"></span>
+          <p class="description">TEST</p></li>
+        <li>
+        <p class="diplome">1944</p>
+          <span class="point"></span>
+          <p class="description">Souvent nécessaire pour pouvoir accéder aux concours d’embauche de centres de recherche tels que l’INRA ou le CNRS</p>
+        </li>
+        <li>
+            <p class="diplome">1945</p>
+              <span class="point"></span>
+              <p class="description">Souvent nécessaire pour pouvoir accéder aux concours d’embauche de centres de recherche tels que l’INRA ou le CNRS</p>
+            </li>
+      </ol>
+    </div>
+    </section>
+    <!-- section vehicule -->
+
+    <section id="cars">
+        <h1 class="section_title">Notre équipe</h1>
+        <div class="images">
+            <ul>
+                <li class="car">
+                   <div>
+                       <img src="images/download.png" alt="">
+                   </div>
+                   <span>FULLY Clément</span>
+                   
+                   <a href="#">élève de jean XXIII en Terminale D</a>
+                </li>
+                <li class="car">
+                    <div>
+                        <img src="images/download.png" alt="">
+                    </div>
+                    <span>MARTIN GASSERT Romain</span>
+                    
+                    <a href="#">élève de jean XXIII en Terminale D</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="images/download.png" alt="">
+                    </div>
+                    <span>Valentin </span>
+                    
+                    <a href="#">élève de jean XXIII en Terminale D</a>
+                 </li>
+
+            </ul>
+        </div>
+    </section>
+    </div>
+    
+    <div id="AppareilRadio">
+        <div id = "affSelect">
+              
+       </div>
+        <ul id = "frise">
+            <li class = "dates">1940</li>
+            <li class = "dates">1941</li>
+            <li class = "dates">1942</li>
+            <li class = "dates">1943</li>
+            <li class = "dates">1944</li>
+            <li class = "dates">1945</li>
+        </ul>
+        <div id ="Selecteur">
+            
+        </div>
+        <div id ="OnOff">
+            
+        </div>
+    </div>
+</body>
+</html>
