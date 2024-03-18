@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>radio résistant </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleRadio.css">
     <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -123,24 +124,49 @@
     </section>
     </div>
     
-    <div id="AppareilRadio">
-        <div id = "affSelect">
-              
-       </div>
-        <ul id = "frise">
-            <li class = "dates">1940</li>
-            <li class = "dates">1941</li>
-            <li class = "dates">1942</li>
-            <li class = "dates">1943</li>
-            <li class = "dates">1944</li>
-            <li class = "dates">1945</li>
-        </ul>
+<div id="AppareilRadio">
+       
+        <img src ="ImageRadio.jpg" alt ="" id = "ImageRadio">
+        <div  id ="affSelect">
+            <div id = "trait">
+            </div>
+            <div id = "frise" >
+                <a class = "dates">1940</a>
+                <a class = "dates">1941</a>
+                <a class = "dates">1942</a>
+                <a class = "dates">1943</a>
+                <a class = "dates">1944</a>
+                <a class = "dates">1945</a>
+            </div>
+        </div>
         <div id ="Selecteur">
-            
+            <img src ="ChgPiste.jpg" alt ="EmissionPrécedente" id = "FlecheGauche" onclick = "Piste(false)" class = "fleches">
+            <img src ="ChgPiste.jpg" alt ="EmissionSuivante" id = "FlecheDroite" onclick = "Piste(true)" class = "fleches">
         </div>
         <div id ="OnOff">
-            
+           <img src = "Play-Pause.png" alt ="Jouer-Arreter" id = "Play-Pause" onclick = "playPause()" class = "fleches">
         </div>
+ <div id="ASong">
+  <audio
+    src="Test_radio_cnrd.m4a"
+    autoplay
+  ></audio>
+</div>
+
+<script>
+  var aud = document.getElementById("ASong").children[0];
+  var isPlaying = false;
+  aud.pause();
+
+  function playPause() {
+    if (isPlaying) {
+      aud.pause();
+    } else {
+      aud.play();
+    }
+    isPlaying = !isPlaying;
+  }
+    </script>
     </div>
 </body>
 </html>
