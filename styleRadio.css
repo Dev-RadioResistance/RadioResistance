@@ -1,0 +1,103 @@
+/*page et radio*/
+#page{
+    display : block ;
+}
+#AppareilRadio{
+    display : none ;
+    position : fixed ;
+    top : 5%;
+    height : 100% ;
+    background-color : grey ;
+    width : 100% ;
+}
+/*-  -  -  -  -  -  -  -  -  -  -  -*/
+
+
+/*affichage dates déroulant*/
+.dates{
+    font-size: 250% ;
+    margin-right : 9% ;
+    line-height: 200%;
+}
+
+#trait{
+    position : relative ;
+    left : 49% ;
+    height : 50% ;
+    width : 7px ;
+    background-color : red ;
+}
+#affSelect{
+    position : fixed ;
+    top : 68% ;
+    left : 24.5% ;
+    width : 50% ;
+    height : 18%;
+    background-color : white ;
+    justify-content : center ;
+    overflow : hidden ;
+    border-radius : 20px ;
+}
+
+#frise{
+    position : relative ;
+    margin-right : 10%;
+    top : 10%;
+    left : 38%;
+}
+/*-  -  -  -  -  -  -  -  -  -  -  -*/
+
+/*fond*/
+#ImageRadio{
+    position : relative ;
+    height : 100% ;
+    width : 100% ;        
+}
+/*-  -  -  -  -  -  -  -  -  -  -  -*/
+
+
+
+/*Boutons de déplacement*/
+#OnOff{
+    position : fixed ;
+    left : 10%;
+    top : 64%;
+    height : 25% ;
+    width : 13% ;
+    border-radius : 50%;
+    background-color : white ;
+}
+
+#Selecteur{
+    position : fixed ;
+    right : 11%;
+    top : 64%;
+    height : 25% ;
+    width : 13% ;
+    border-radius : 50%;
+    background-color : white ;
+}
+.fleches{
+   position: relative ;
+   width : 49% ;
+   opacity : 0.7;
+   top : 30%;
+   border-radius : 50%;
+   border : solid white 10px ;
+}
+.fleches:hover {
+    opacity : 0.9 ;
+}
+
+#FlecheGauche{
+    transform: rotate(180deg);
+    visibility : hidden ;
+}
+#FlècheDroite{
+}
+#Play-Pause{
+    left : 25.5% ;
+    top : 25%;
+    border-radius : 0% ;
+}
+/*-  -  -  -  -  -  -  -  -  -  -  -*/
